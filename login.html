@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Montserrat&family=Open+Sans&family=Pixelify+Sans&family=Poppins&display=swap"
+        rel="stylesheet">
+    <title>Log in</title>
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+            background-color: black;
+        }
+
+        p,
+        a {
+            color: white;
+        }
+
+        .main-container {
+            /* border: 1px solid white; */
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-heading {
+            font-weight: 900;
+            font-size: 36px;
+        }
+
+        .sub-heading {
+            margin-top: -10px;
+        }
+
+        .form {
+            border-radius: 20px;
+            background-color: white;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            padding: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+            .form p  {
+                color: black;
+            }
+
+        .input {
+            color: white;
+            background-color: white;
+            height: 40px;
+            width: 250px;
+        }
+
+        .input-heading {
+            background-color: white;
+            letter-spacing: 2px;
+            font-size: 12px;
+        }
+
+        .button {
+            border-radius: 10px;
+            font-weight: 700;
+            margin: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            height: 50px;
+            width: 170px;
+            text-align: center;
+        }
+        .form-2 {
+            background-color: white;
+        }
+        .button:hover 
+        {
+            transition-duration: 0.2s;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+        .forgot {
+            margin-top: 10px;
+            font-size: 11px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <p class="main-heading">Log in</p>
+        <p class="sub-heading">Don't have an account?
+            <a href="signup.html    " class="login">Sign up</a>
+        </p>
+
+        <div class="form">
+            <div class="form-2">
+                <p class="input-heading">EMAIL</p>
+                <input placeholder="Email" style="color: black; padding-left: 10px;" class="input" type="text">
+            </div>
+            <div class="form-2">
+                <p class="input-heading">PASSWORD</p>
+                <input placeholder="Password" style="color: black; padding-left: 10px;" class="input" type="password">
+            </div>
+            <a href="#" class="forgot">Forgot password?</a>
+            <button class="button">
+                Log in
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>
